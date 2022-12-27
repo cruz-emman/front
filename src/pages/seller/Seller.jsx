@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Box, Typography } from '@mui/material';
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { publicRequest } from '../../utils.js/requestMethod'
 import BeatLoader from "react-spinners/BeatLoader";
 
