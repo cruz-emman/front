@@ -42,6 +42,8 @@ const Seller = () => {
     <Typography>{sellerInfo.middleName}</Typography>
     <Typography>{sellerInfo.firstName}</Typography>
 
+    <Link to="/login"><Typography>Login</Typography></Link>
+        <Link to="/register"><Typography>register</Typography></Link>
    </Box>
    }
    </>
