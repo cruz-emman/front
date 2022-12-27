@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://tua-mern-app-api.onrender.com/";
+const BASE_URL = "https://tua-mern-app-api.onrender.com/api";
 
   const user = JSON.parse(localStorage.getItem("persist:root"))?.auth;
   const currentUser = user && JSON.parse(user).currentUser;
