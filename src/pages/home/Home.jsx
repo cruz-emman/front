@@ -1,4 +1,4 @@
-import { Box } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
@@ -60,6 +60,9 @@ const Home = () => {
            ))}
 
         </table>
+
+        <Link to="/login"><Typography>Login</Typography></Link>
+        <Link to="/register"><Typography>register</Typography></Link>
       </Box>
     )}
     </>
