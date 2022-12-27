@@ -51,9 +51,9 @@ const Home = () => {
            {users.map((user) => (
 
              <tr key={user._id}>
-              <td>{user.firstName}</td> 
+              <td>{user?.firstName}</td> 
               <Link to={`/sProfile/${user._id}`}>
-              <td>{user._id}</td>
+              <td>{user?._id}</td>
               </Link>
             </tr>
 
