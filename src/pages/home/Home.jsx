@@ -43,7 +43,6 @@ const Home = () => {
         <table>
           <tbody>
             <tr>
-              <th>User</th>
               <th>Id</th>
             </tr>
           </tbody>
@@ -51,7 +50,6 @@ const Home = () => {
            {users.map((user) => (
 
              <tr key={user._id}>
-              <td>{user?.firstName}</td> 
               <Link to={`/sProfile/${user._id}`}>
               <td>{user?._id}</td>
               </Link>
