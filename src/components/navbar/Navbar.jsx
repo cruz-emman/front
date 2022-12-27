@@ -49,7 +49,7 @@ const Navbar = () => {
               </IconButton>
 
               <NavbarBoxRightContainerUser>
-                <NavbarboxRightTextContainer>Hello, {currentUser.firstName}</NavbarboxRightTextContainer>
+                <NavbarboxRightTextContainer>Hello, {currentUser?.firstName}</NavbarboxRightTextContainer>
               </NavbarBoxRightContainerUser>
 
               <IconButton>
