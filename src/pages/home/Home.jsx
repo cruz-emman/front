@@ -1,11 +1,11 @@
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import Navbar from '../../components/navbar/Navbar'
-import { getAllUsers } from '../../redux/apiCalls'
 import { publicRequest } from '../../utils.js/requestMethod'
+import BeatLoader from "react-spinners/BeatLoader";
 
 const Home = () => {
 
@@ -30,7 +30,13 @@ const Home = () => {
   return (
     <>
     {loading ? (
-      <Typography>Hello</Typography>
+     <BeatLoader 
+      color="#36d7b7" 
+      loading={loading}
+      size={50}
+      aria-label="Loading Spinner"
+      data-testid="loader"
+  />
     ): (
       <Box>
         <Navbar/>
